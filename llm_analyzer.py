@@ -10,16 +10,21 @@ from config import (
 from prompts import SYSTEM_PROMPT
 
 
-client = OpenAI(
-    base_url=BASE_URL,
-    api_key=OPENROUTER_API_KEY
-)
+# client = OpenAI(
+#     base_url=BASE_URL,
+#     api_key=OPENROUTER_API_KEY
+# )
 
 
 def analyze(prompt, chat_history=None):
     """
     Generate an answer using GPT-OSS-120B.
     """
+    client = OpenAI(
+    base_url=BASE_URL,
+    api_key=OPENROUTER_API_KEY
+    )
+
 
     try:
 
