@@ -1,6 +1,13 @@
 __pycache__/
 *.pyc
+
 .venv/
+venv/
+
 .env
+
 chat_history.db
+
 .ipynb_checkpoints/
+
+.vscode/
